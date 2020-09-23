@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   changeClick = (id) => {
-    return this.setState({selectedGifId: `${id}`});
+    return this.setState({ selectedGifId: id });
   }
 
   search = (query) => { 
