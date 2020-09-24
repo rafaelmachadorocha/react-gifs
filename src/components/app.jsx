@@ -24,7 +24,6 @@ class App extends Component {
 
   search = (query) => { 
     giphy.search({
-      https: true,
       q: query,
       rating: 'g',
       limit: 10
