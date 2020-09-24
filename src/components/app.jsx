@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       gifs: [],
-      selectedGifId: null//'LRBjTCzr99kjpNZaL9'  
+      selectedGifId: null // 'LRBjTCzr99kjpNZaL9'  
     }
   }
 
@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   search = (query) => { 
-    giphy('fEeIPT8WDQiwgmV09yb4FPyEfTw11ghF').search({
+    giphy({apiKey: 'fEeIPT8WDQiwgmV09yb4FPyEfTw11ghF', https: true}).search({
       q: query,
       rating: 'g',
       limit: 10
