@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import SearchBar from './search_bar';
 import Gif from './gif';
 import GifList from './gif_list';
-import giphy from 'giphy-api';
+//import giphy from 'giphy-api';
+const giphy = require('giphy-api')({
+  apiKey: 'fEeIPT8WDQiwgmV09yb4FPyEfTw11ghF',
+  https: true
+});
 
 class App extends Component {
   
@@ -19,7 +23,7 @@ class App extends Component {
   }
 
   search = (query) => { 
-    giphy('fEeIPT8WDQiwgmV09yb4FPyEfTw11ghF').search({
+    giphy.search({
       https: true,
       q: query,
       rating: 'g',
