@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Gif extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.id !== this.props.id; //don't call render if thr props.id did not change
+    return nextProps.id !== this.props.id; //don't call render if the props.id did not change
     // the render method is called by react to compute the virtual DOM
   }
 
