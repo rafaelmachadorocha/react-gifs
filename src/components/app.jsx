@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       gifs: [],
-      selectedGifId: 'LRBjTCzr99kjpNZaL9'  
+      selectedGifId: null//'LRBjTCzr99kjpNZaL9'  
     }
   }
 

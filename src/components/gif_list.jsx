@@ -1,14 +1,15 @@
 import React, { Component } from 'react'; 
 import Gif from './gif';
 
-class GifList extends Component {
- 
-  render () {
-    return (
+// Destructuring
+const GifList = ({ gifs, selectedGif }) => {
+  return (
+    // List pattern
+    // everytime you pass an array with props, you need to use map to correctly render the components
     <div className="gif-list">
-      {this.props.gifs.map(gif => <Gif selectedGif={this.props.selectedGif} id={gif.id} key={gif.id} />)}
+      {gifs.map(({ id }) => <Gif selectedGif={selectedGif} id={id} key={id} />)}
     </div>
-    )
-  }
-}
+  );
+};
+
 export default GifList
