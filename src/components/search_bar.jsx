@@ -11,7 +11,7 @@ class SearchBar extends Component {
 
   componentWillMount() {
     console.log('SearchBar will mount');
-    setInterval
+    //setInterval
   }
 
   componentDidMount() {
@@ -25,7 +25,7 @@ class SearchBar extends Component {
   }
 
   componentWillUnmount() {
-    clearInterval
+    //clearInterval
   }
 
   handleUpdate = (event) => {

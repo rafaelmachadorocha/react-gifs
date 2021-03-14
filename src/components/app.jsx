@@ -16,10 +16,11 @@ class App extends Component {
       gifs: [],
       selectedGifId: null // 'LRBjTCzr99kjpNZaL9'  
     }
+    // this.changeClick = this.changeClick.bind(this)
   }
 
   changeClick = (id) => {
-    return this.setState({ selectedGifId: id });
+    this.setState({ selectedGifId: id });
   }
 
   search = (query) => { 
@@ -28,7 +29,7 @@ class App extends Component {
       rating: 'g',
       limit: 10
     }, (error, response) => {
-      return this.setState({gifs: response.data})
+      this.setState({gifs: response.data})
     })
   }
 
