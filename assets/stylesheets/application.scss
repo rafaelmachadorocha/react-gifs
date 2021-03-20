@@ -3,6 +3,15 @@
   height: 100vh;
 }
 
+.clicked {
+  color: red !important;
+}
+
+.not-clicked {
+  color: black !important;
+}
+
+
 .left-scene {
   flex: 0 0 60%;
   position: sticky;
